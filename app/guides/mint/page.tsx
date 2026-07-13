@@ -63,7 +63,7 @@ export default function MintGuidePage() {
           <li>
             <strong>Keep PT, sell YT.</strong> You have locked in a fixed rate. The YT sale is
             your interest, taken up front in cash; the PT pays full face value at maturity. See{" "}
-            <Link href="/docs/guides/trade">Trade PT and YT</Link>.
+            <Link href="/guides/trade">Trade PT and YT</Link>.
           </li>
           <li>
             <strong>Keep YT, sell PT.</strong> You have concentrated into pure interest exposure,
@@ -93,12 +93,12 @@ export default function MintGuidePage() {
         <Callout label="Undo is always available">
           Split and recombine are exact opposites. Equal amounts of PT and YT recombine back into
           SY at any time before maturity, from the{" "}
-          <Link href="/docs/guides/claim-redeem">Portfolio page</Link>. You are never locked into
+          <Link href="/guides/claim-redeem">Portfolio page</Link>. You are never locked into
           the split form.
         </Callout>
       </div>
 
-      <DocsPager current="/docs/guides/mint" />
+      <DocsPager current="/guides/mint" />
     </article>
   );
 }

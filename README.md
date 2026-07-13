@@ -12,9 +12,11 @@ and the **working records** behind the protocol.
 
 ## The docs site
 
-A self-contained Next.js app at the repo root: `app/docs/**` (pages),
-`components/` (sidebar, pager, atmosphere chrome), no dependency on the main
-app workspace. Every page is prerendered static. `/` redirects to `/docs`.
+A self-contained Next.js app at the repo root: `app/` (pages, served at
+`/`, `/concepts`, `/guides/mint`, ...), `components/` (sidebar, pager,
+atmosphere chrome), no dependency on the main app workspace. Every page is
+prerendered static, and `/docs/*` redirects to `/*` so links shared from the
+in-app docs resolve here too.
 
 ```bash
 nvm use 20
@@ -27,8 +29,8 @@ pnpm run build    # static production build
 root; Next.js is auto-detected, no environment variables needed. Point a
 subdomain (e.g. `docs.sidereal.tech`) at it.
 
-**Keeping content in sync:** the page sources under `app/docs/` are
-duplicated from `app/app/docs/` in the web repo. When docs pages change
+**Keeping content in sync:** the page sources under `app/` are duplicated
+from `app/app/docs/` in the web repo. When docs pages change
 there, port the change here (the components and prose CSS are copies too).
 
 ## Records index

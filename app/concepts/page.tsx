@@ -109,11 +109,11 @@ export default function ConceptsPage() {
           them. One protection worth knowing: when YT changes hands, the interest the seller
           already earned is credited to the seller first, so buying YT never buys someone
           else&rsquo;s already-earned interest. Details in{" "}
-          <Link href="/docs/tokenizer">Tokenizer</Link>.
+          <Link href="/tokenizer">Tokenizer</Link>.
         </Callout>
       </div>
 
-      <DocsPager current="/docs/concepts" />
+      <DocsPager current="/concepts" />
     </article>
   );
 }

@@ -44,7 +44,7 @@ export default function TokenizerPage() {
           SY from the escrow, which unwraps to exactly <code>pt</code> USDC. Here{" "}
           <code>R_maturity</code> is the rate frozen at maturity, so nothing that happens to rates
           afterwards can change what PT pays (see{" "}
-          <Link href="/docs/settlement">Settlement and maturity</Link>).
+          <Link href="/settlement">Settlement and maturity</Link>).
         </p>
 
         <h2>How YT earns: the checkpoint system</h2>
@@ -133,7 +133,7 @@ export default function TokenizerPage() {
         </Callout>
       </div>
 
-      <DocsPager current="/docs/tokenizer" />
+      <DocsPager current="/tokenizer" />
     </article>
   );
 }

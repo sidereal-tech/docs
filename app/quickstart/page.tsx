@@ -86,15 +86,15 @@ export default function QuickstartPage() {
         <h2>Where to next</h2>
         <ul>
           <li>
-            New to yield splitting? Read <Link href="/docs/concepts">SY, PT and YT</Link> first. It
+            New to yield splitting? Read <Link href="/concepts">SY, PT and YT</Link> first. It
             explains what each token is actually worth, in plain terms.
           </li>
           <li>
-            Ready to act? The <Link href="/docs/guides/mint">Deposit and split guide</Link> walks
+            Ready to act? The <Link href="/guides/mint">Deposit and split guide</Link> walks
             through the Mint page field by field.
           </li>
           <li>
-            Want the machinery? Start at the <Link href="/docs/sy-wrapper">SY wrapper</Link> and
+            Want the machinery? Start at the <Link href="/sy-wrapper">SY wrapper</Link> and
             read the Protocol design section in order.
           </li>
         </ul>
@@ -105,11 +105,11 @@ export default function QuickstartPage() {
           The mainnet market is newly seeded, so the trading pool is still small. Depositing,
           splitting, collecting and redeeming work at any size. Trades, however, move the price
           sharply while the pool is shallow, so check the quoted price impact before swapping. See{" "}
-          <Link href="/docs/amm">AMM and YT routing</Link>.
+          <Link href="/amm">AMM and YT routing</Link>.
         </Callout>
       </div>
 
-      <DocsPager current="/docs/quickstart" />
+      <DocsPager current="/quickstart" />
     </article>
   );
 }

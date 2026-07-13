@@ -38,7 +38,7 @@ export default function ClaimRedeemGuidePage() {
           the split exactly. Enter the amount under <strong>Recombine to SY</strong>. The protocol
           burns both tokens, credits any interest your YT had earned to your ledger first, and
           releases the locked SY. Holding unequal amounts? Recombine as much as the smaller side
-          allows, then trade the leftover on the <Link href="/docs/guides/trade">Trade page</Link>.
+          allows, then trade the leftover on the <Link href="/guides/trade">Trade page</Link>.
         </p>
 
         <h2>Redeem PT, after maturity</h2>
@@ -96,11 +96,11 @@ export default function ClaimRedeemGuidePage() {
         <Callout label="Maturity date" signal>
           The live market matures <strong>2026-08-09 15:39 UTC</strong>. YT stops earning at that
           instant; PT redemption opens from it. The freeze mechanics are covered in{" "}
-          <Link href="/docs/settlement">Settlement and maturity</Link>.
+          <Link href="/settlement">Settlement and maturity</Link>.
         </Callout>
       </div>
 
-      <DocsPager current="/docs/guides/claim-redeem" />
+      <DocsPager current="/guides/claim-redeem" />
     </article>
   );
 }

@@ -131,7 +131,7 @@ export default function LifecyclePage() {
         <Callout label="Current market" signal>
           The live mainnet market runs a 30-day cycle over the Blend v2 USDC pool, maturing{" "}
           <strong>2026-08-09 15:39 UTC</strong>. Contract addresses and deployment records are in{" "}
-          <Link href="/docs/contracts">Deployed contracts</Link>.
+          <Link href="/contracts">Deployed contracts</Link>.
         </Callout>
       </div>
 
@@ -139,11 +139,11 @@ export default function LifecyclePage() {
         <p>
           The freeze mechanics (who records observations, what happens if none lands exactly at
           maturity, and why redemption can never read a post-maturity rate) are covered in{" "}
-          <Link href="/docs/settlement">Settlement and maturity</Link>.
+          <Link href="/settlement">Settlement and maturity</Link>.
         </p>
       </div>
 
-      <DocsPager current="/docs/lifecycle" />
+      <DocsPager current="/lifecycle" />
     </article>
   );
 }

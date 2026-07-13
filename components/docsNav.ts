@@ -12,41 +12,41 @@ export const DOCS_NAV: DocsNavGroup[] = [
   {
     label: "Overview",
     items: [
-      { href: "/docs", label: "Introduction" },
-      { href: "/docs/quickstart", label: "Quickstart" },
+      { href: "/", label: "Introduction" },
+      { href: "/quickstart", label: "Quickstart" },
     ],
   },
   {
     label: "Concepts",
     items: [
-      { href: "/docs/concepts", label: "SY, PT and YT" },
-      { href: "/docs/lifecycle", label: "Market lifecycle" },
+      { href: "/concepts", label: "SY, PT and YT" },
+      { href: "/lifecycle", label: "Market lifecycle" },
     ],
   },
   {
     label: "Protocol design",
     items: [
-      { href: "/docs/sy-wrapper", label: "SY wrapper" },
-      { href: "/docs/tokenizer", label: "Tokenizer" },
-      { href: "/docs/amm", label: "AMM and YT routing" },
-      { href: "/docs/settlement", label: "Settlement and maturity" },
+      { href: "/sy-wrapper", label: "SY wrapper" },
+      { href: "/tokenizer", label: "Tokenizer" },
+      { href: "/amm", label: "AMM and YT routing" },
+      { href: "/settlement", label: "Settlement and maturity" },
     ],
   },
   {
     label: "Guides",
     items: [
-      { href: "/docs/guides/mint", label: "Deposit and split" },
-      { href: "/docs/guides/trade", label: "Trade PT and YT" },
-      { href: "/docs/guides/liquidity", label: "Provide liquidity" },
-      { href: "/docs/guides/claim-redeem", label: "Claim and redeem" },
+      { href: "/guides/mint", label: "Deposit and split" },
+      { href: "/guides/trade", label: "Trade PT and YT" },
+      { href: "/guides/liquidity", label: "Provide liquidity" },
+      { href: "/guides/claim-redeem", label: "Claim and redeem" },
     ],
   },
   {
     label: "Reference",
     items: [
-      { href: "/docs/contracts", label: "Deployed contracts" },
-      { href: "/docs/security", label: "Security and risks" },
-      { href: "/docs/faq", label: "FAQ" },
+      { href: "/contracts", label: "Deployed contracts" },
+      { href: "/security", label: "Security and risks" },
+      { href: "/faq", label: "FAQ" },
     ],
   },
 ];

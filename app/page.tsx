@@ -89,20 +89,20 @@ export default function IntroductionPage() {
         <p>Each piece has its own page:</p>
         <ul>
           <li>
-            <Link href="/docs/concepts">SY, PT and YT</Link>: the three tokens and what each one is
+            <Link href="/concepts">SY, PT and YT</Link>: the three tokens and what each one is
             worth.
           </li>
           <li>
-            <Link href="/docs/lifecycle">Market lifecycle</Link>: what happens from deposit to
+            <Link href="/lifecycle">Market lifecycle</Link>: what happens from deposit to
             maturity, in order.
           </li>
           <li>
-            <Link href="/docs/sy-wrapper">SY wrapper</Link>, <Link href="/docs/tokenizer">Tokenizer</Link>,{" "}
-            <Link href="/docs/amm">AMM</Link>, and <Link href="/docs/settlement">Settlement</Link>:
+            <Link href="/sy-wrapper">SY wrapper</Link>, <Link href="/tokenizer">Tokenizer</Link>,{" "}
+            <Link href="/amm">AMM</Link>, and <Link href="/settlement">Settlement</Link>:
             how the machinery works under the hood.
           </li>
           <li>
-            <Link href="/docs/guides/mint">Guides</Link>: step-by-step walkthroughs of every action
+            <Link href="/guides/mint">Guides</Link>: step-by-step walkthroughs of every action
             in the app.
           </li>
         </ul>
@@ -115,11 +115,11 @@ export default function IntroductionPage() {
           Sidereal is live on Stellar mainnet, and the full lifecycle has settled real funds end to
           end. It has <strong>not</strong> had a professional third-party audit, and the contracts
           cannot be changed after deployment, so a defect would be permanent. Treat it as early and
-          unaudited, not as safe. See <Link href="/docs/security">Security and risks</Link>.
+          unaudited, not as safe. See <Link href="/security">Security and risks</Link>.
         </Callout>
       </div>
 
-      <DocsPager current="/docs" />
+      <DocsPager current="/" />
     </article>
   );
 }

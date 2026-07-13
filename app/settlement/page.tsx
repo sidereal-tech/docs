@@ -55,7 +55,7 @@ export default function SettlementPage() {
           Settlement enforces a strict order on the escrow: the full PT principal is reserved{" "}
           <em>before</em> any YT interest is paid. In normal operation this ordering is invisible,
           because the escrow covers both sides in full (see the{" "}
-          <Link href="/docs/tokenizer">tokenizer&rsquo;s coverage rule</Link>). It only bites if
+          <Link href="/tokenizer">tokenizer&rsquo;s coverage rule</Link>). It only bites if
           the underlying pool genuinely loses money:
         </p>
         <ul>
@@ -114,7 +114,7 @@ export default function SettlementPage() {
         </Callout>
       </div>
 
-      <DocsPager current="/docs/settlement" />
+      <DocsPager current="/settlement" />
     </article>
   );
 }

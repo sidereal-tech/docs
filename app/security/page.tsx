@@ -48,7 +48,7 @@ export default function SecurityPage() {
           <li>
             <strong>Reproducible builds:</strong> anyone can rebuild the contracts from the
             recorded source commit and confirm the result matches what is on chain, byte for byte
-            (see <Link href="/docs/contracts">Deployed contracts</Link>).
+            (see <Link href="/contracts">Deployed contracts</Link>).
           </li>
           <li>
             <strong>A floating-point tripwire in CI:</strong> Stellar contracts must use
@@ -165,7 +165,7 @@ export default function SecurityPage() {
         </p>
       </div>
 
-      <DocsPager current="/docs/security" />
+      <DocsPager current="/security" />
     </article>
   );
 }

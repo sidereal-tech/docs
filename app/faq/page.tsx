@@ -13,7 +13,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
       <>
         Yes, since 2026-07-11, on top of Blend v2&rsquo;s USDC pool, and the full lifecycle has
         settled real funds end to end. It is early and unaudited; see{" "}
-        <Link href="/docs/security">Security and risks</Link>.
+        <Link href="/security">Security and risks</Link>.
       </>
     ),
   },
@@ -55,7 +55,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
       <>
         No. Every YT transfer settles both sides first: your earned interest is credited to you
         before the balance moves, and the buyer starts earning from the transfer onward. See{" "}
-        <Link href="/docs/tokenizer">Tokenizer</Link>.
+        <Link href="/tokenizer">Tokenizer</Link>.
       </>
     ),
   },
@@ -65,7 +65,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
       <>
         That discount is the product. PT works like a savings bond: pay less than face value
         today, receive exactly face value at maturity. The gap, expressed as a yearly rate, is
-        the fixed return you lock by buying. See <Link href="/docs/concepts">SY, PT and YT</Link>.
+        the fixed return you lock by buying. See <Link href="/concepts">SY, PT and YT</Link>.
       </>
     ),
   },
@@ -87,7 +87,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
         SY is a Blend position, so a Blend loss is an SY loss. The protocol prices the shortfall
         instead of freezing up: PT redemptions cap at each holder&rsquo;s fair share (everyone
         shares the loss equally, so there is no bank-run race), and PT is paid before YT. See{" "}
-        <Link href="/docs/settlement">Settlement and maturity</Link>.
+        <Link href="/settlement">Settlement and maturity</Link>.
       </>
     ),
   },
@@ -98,7 +98,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
         No. The contracts cannot be upgraded, and the admin key&rsquo;s single power is a narrow
         Blend housekeeping migration that cannot touch funds, rates, or token supply. Pause, fee
         change, and seizure entrypoints simply do not exist in the deployed code. See{" "}
-        <Link href="/docs/security">Security and risks</Link>.
+        <Link href="/security">Security and risks</Link>.
       </>
     ),
   },
@@ -130,7 +130,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
       <>
         Rebuild from the recorded source commit and compare the result against the on-chain
         bytecode. The one-command process is in{" "}
-        <Link href="/docs/contracts">Deployed contracts</Link>.
+        <Link href="/contracts">Deployed contracts</Link>.
       </>
     ),
   },
@@ -156,7 +156,7 @@ export default function FaqPage() {
         ))}
       </dl>
 
-      <DocsPager current="/docs/faq" />
+      <DocsPager current="/faq" />
     </article>
   );
 }

@@ -34,7 +34,7 @@ export default function LiquidityGuidePage() {
         </p>
         <p>
           Need PT to pair with your SY? Split some SY first (see{" "}
-          <Link href="/docs/guides/mint">Deposit and split</Link>). One split produces the PT leg
+          <Link href="/guides/mint">Deposit and split</Link>). One split produces the PT leg
           and leaves SY for the other side.
         </p>
 
@@ -72,7 +72,7 @@ export default function LiquidityGuidePage() {
           clean. Nothing forces you out at the boundary; LP positions can be withdrawn during the
           wind-down after maturity too. LP balances live in rent-paying persistent storage, which
           the app keeps topped up, and even a lapsed entry is archived rather than deleted and can
-          be restored (see <Link href="/docs/settlement">Settlement and maturity</Link>).
+          be restored (see <Link href="/settlement">Settlement and maturity</Link>).
         </p>
       </div>
 
@@ -85,7 +85,7 @@ export default function LiquidityGuidePage() {
         </Callout>
       </div>
 
-      <DocsPager current="/docs/guides/liquidity" />
+      <DocsPager current="/guides/liquidity" />
     </article>
   );
 }

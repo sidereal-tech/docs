@@ -137,7 +137,7 @@ p = PT_reserve / (PT_reserve + SY_reserve)`}</code>
         <p>
           Every pool operation accepts a minimum-you-will-accept bound. If the price moves against
           you between quote and execution beyond that bound, the transaction cancels itself rather
-          than filling badly. See the <Link href="/docs/guides/liquidity">liquidity guide</Link>{" "}
+          than filling badly. See the <Link href="/guides/liquidity">liquidity guide</Link>{" "}
           for the practical walkthrough.
         </p>
       </div>
@@ -152,7 +152,7 @@ p = PT_reserve / (PT_reserve + SY_reserve)`}</code>
         </Callout>
       </div>
 
-      <DocsPager current="/docs/amm" />
+      <DocsPager current="/amm" />
     </article>
   );
 }

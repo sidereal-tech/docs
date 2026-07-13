@@ -153,7 +153,7 @@ bash scripts/verify-reproducible-build.sh \\
           can re-point the SY wrapper at the same underlying asset under a new Blend reserve slot.
           The migration validates the new index&rsquo;s asset against the configured underlying, so
           it cannot redirect funds, reprice, or mint. Details in{" "}
-          <Link href="/docs/security">Security and risks</Link>.
+          <Link href="/security">Security and risks</Link>.
         </p>
 
         <h2>Testnet</h2>
@@ -174,7 +174,7 @@ bash scripts/verify-reproducible-build.sh \\
         </Callout>
       </div>
 
-      <DocsPager current="/docs/contracts" />
+      <DocsPager current="/contracts" />
     </article>
   );
 }

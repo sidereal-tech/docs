@@ -61,7 +61,7 @@ export default function TradeGuidePage() {
         <p>
           YT trades route through the same PT/SY pool in one atomic step. There is no separate YT
           pool, so YT and PT prices can never disagree with each other. The mechanism is in{" "}
-          <Link href="/docs/amm">AMM and YT routing</Link>.
+          <Link href="/amm">AMM and YT routing</Link>.
         </p>
 
         <h2>Reading the numbers</h2>
@@ -102,12 +102,12 @@ export default function TradeGuidePage() {
         <Callout label="Current pool depth" signal>
           The mainnet market is newly seeded and shallow. Small trades work fine; size will move
           the rate sharply against you, and the quote will show it. Splitting and holding (see{" "}
-          <Link href="/docs/guides/mint">Deposit and split</Link>) works at any size, no pool
+          <Link href="/guides/mint">Deposit and split</Link>) works at any size, no pool
           required.
         </Callout>
       </div>
 
-      <DocsPager current="/docs/guides/trade" />
+      <DocsPager current="/guides/trade" />
     </article>
   );
 }

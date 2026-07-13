@@ -41,7 +41,7 @@ export default function SyWrapperPage() {
           Because the position only lends and never borrows, the rate is one-directional in normal
           operation: interest accrues, so it rises. The case where the underlying pool itself
           suffers a loss is handled explicitly; see{" "}
-          <Link href="/docs/settlement">Settlement and maturity</Link> for how a falling rate is
+          <Link href="/settlement">Settlement and maturity</Link> for how a falling rate is
           priced in rather than causing a freeze-up.
         </p>
 
@@ -50,8 +50,8 @@ export default function SyWrapperPage() {
           Blend&rsquo;s own deposit token doesn&rsquo;t expose a clean, vault-style interface, and
           the next yield source (a tokenized treasury fund, a different pool) won&rsquo;t look
           like Blend either. The wrapper flattens every underlying into one simple surface: a
-          token count and an exchange rate. The <Link href="/docs/tokenizer">tokenizer</Link> and
-          the <Link href="/docs/amm">AMM</Link> are written against that surface only. Neither of
+          token count and an exchange rate. The <Link href="/tokenizer">tokenizer</Link> and
+          the <Link href="/amm">AMM</Link> are written against that surface only. Neither of
           them knows Blend exists.
         </p>
         <p>
@@ -85,7 +85,7 @@ export default function SyWrapperPage() {
         </Callout>
       </div>
 
-      <DocsPager current="/docs/sy-wrapper" />
+      <DocsPager current="/sy-wrapper" />
     </article>
   );
 }
