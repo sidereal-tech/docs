@@ -1,15 +1,37 @@
 # sidereal docs
 
-Project documentation for [Sidereal](https://www.sidereal.tech), yield
-tokenization on Stellar. User-facing documentation lives in the app at
-<https://www.sidereal.tech/docs>; this repo holds the working records behind
-the protocol.
+Documentation for [Sidereal](https://www.sidereal.tech), yield tokenization
+on Stellar. This repo holds two things: a **deployable documentation site**
+(the same 15-page docs surface the app serves at
+[sidereal.tech/docs](https://www.sidereal.tech/docs), packaged standalone),
+and the **working records** behind the protocol.
 
 - Contracts repo:
   [`sidereal-tech/contracts`](https://github.com/sidereal-tech/contracts)
 - Frontend/SDK repo: [`sidereal-tech/web`](https://github.com/sidereal-tech/web)
 
-## Index
+## The docs site
+
+A self-contained Next.js app at the repo root: `app/docs/**` (pages),
+`components/` (sidebar, pager, atmosphere chrome), no dependency on the main
+app workspace. Every page is prerendered static. `/` redirects to `/docs`.
+
+```bash
+nvm use 20
+pnpm install
+pnpm dev          # local preview
+pnpm run build    # static production build
+```
+
+**Deploy (Vercel):** create a project on this repo, Root Directory = repo
+root; Next.js is auto-detected, no environment variables needed. Point a
+subdomain (e.g. `docs.sidereal.tech`) at it.
+
+**Keeping content in sync:** the page sources under `app/docs/` are
+duplicated from `app/app/docs/` in the web repo. When docs pages change
+there, port the change here (the components and prose CSS are copies too).
+
+## Records index
 
 | Path | Contents |
 |---|---|
