@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Wordmark } from "@/components/Logo";
 import { Atmosphere } from "@/components/Atmosphere";
 import { Grain } from "@/components/Grain";
@@ -97,6 +98,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </footer>
         </div>
+        <Analytics />
       </body>
     </html>
   );
