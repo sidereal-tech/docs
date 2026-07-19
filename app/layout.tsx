@@ -7,13 +7,30 @@ import { Grain } from "@/components/Grain";
 import { DocsSidebar } from "@/components/DocsSidebar";
 import "./globals.css";
 
+const DESCRIPTION =
+  "How Sidereal splits yield-bearing positions on Stellar into principal and yield tokens: concepts, protocol design, guides, and contract reference.";
+
+// metadataBase resolves the icon and opengraph-image file conventions in
+// app/ to absolute URLs, which is what link unfurlers require.
 export const metadata: Metadata = {
+  metadataBase: new URL("https://docs.sidereal.tech"),
   title: {
     template: "%s · Sidereal Docs",
     default: "Sidereal Docs",
   },
-  description:
-    "How Sidereal splits yield-bearing positions on Stellar into principal and yield tokens: concepts, protocol design, guides, and contract reference.",
+  description: DESCRIPTION,
+  openGraph: {
+    type: "website",
+    siteName: "Sidereal Docs",
+    url: "https://docs.sidereal.tech",
+    title: "Sidereal Docs",
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sidereal Docs",
+    description: DESCRIPTION,
+  },
 };
 
 // The whole site is the docs, so the chrome lives in the root layout: the

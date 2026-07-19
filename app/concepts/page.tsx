@@ -39,23 +39,21 @@ export default function ConceptsPage() {
 
         <h2>PT, the principal</h2>
         <p>
-          PT stands for Principal Token. One PT pays back exactly one dollar of principal at{" "}
-          <strong>maturity</strong>, the market&rsquo;s fixed end date. It pays nothing before
-          then.
+          PT stands for Principal Token. In a solvent market, one PT pays one underlying unit of
+          principal at <strong>maturity</strong>, the market&rsquo;s fixed end date. Under a
+          shortfall, redemption applies the tokenizer&rsquo;s pro-rata haircut. PT pays nothing
+          before maturity.
         </p>
         <p>
-          Because it pays nothing until maturity, PT always sells for <strong>less</strong> than a
-          dollar before that date. If that sounds odd, it is exactly how a government savings bond
-          works: pay $99 today, receive $100 at the end. The $1 gap is your earnings, and since
-          both numbers are known the moment you buy, the return is <strong>fixed</strong>. For
-          example, PT trading at 0.99 USDC with 30 days left works out to roughly 13% a year,
-          locked in. The app does this math for you and shows PT&rsquo;s price as a yearly rate
-          (an APY) instead of a raw price.
+          Economically, a solvent PT should trade below one underlying unit before maturity: pay
+          $0.99 today, receive $1 at the end, and the known gap is the fixed return. The deployed
+          v1 AMM has a documented share-vs-asset unit deviation, so its raw curve quote is not a
+          perfect underlying-denominated PT price once the SY exchange rate moves above 1. The
+          factory-built AMM corrects that boundary before longer terms launch.
         </p>
         <p>
-          As maturity gets closer, PT&rsquo;s price climbs toward one dollar, because there is
-          less and less waiting left to be paid for. That climb is not a bet that might not pay
-          off. It is what the instrument is.
+          In the corrected curve, PT&rsquo;s underlying-denominated price converges toward its
+          solvent redemption value as maturity gets closer.
         </p>
 
         <h2>YT, the interest</h2>

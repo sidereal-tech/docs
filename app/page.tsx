@@ -48,16 +48,16 @@ export default function IntroductionPage() {
         <p>
           Splitting starts from <strong>SY (Standardized Yield)</strong>, which is simply your
           deposit in token form: a receipt that grows in value as interest accrues. The protocol
-          keeps one identity true at all times:
+          keeps one value identity true:
         </p>
         <pre>
           <code>PT + YT = SY</code>
         </pre>
         <p>
-          Splitting one SY always gives you one PT and one YT. Handing back one PT and one YT
-          always gives you the SY back. Nothing is created and nothing is lost by moving between
-          the bundled and unbundled forms. The split is a change of packaging, not of value, and
-          that is what makes the two halves safe to trade on their own.
+          The equation is about value, not fixed token counts. If one SY share is worth R units of
+          underlying, splitting it mints R PT and R YT face units. Before maturity, handing back
+          equal PT and YT face amounts returns the corresponding SY shares at the current exchange
+          rate. The split changes the packaging of the position, not its combined claim.
         </p>
 
         <h2>The first market</h2>

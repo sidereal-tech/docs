@@ -45,7 +45,8 @@ export default function AmmPage() {
           protocols on Ethereum:
         </p>
         <pre>
-          <code>{`exchange_rate = exp( ln(p / (1 − p)) / (r · τ) + a )
+          <code>{`rate_scalar   = scalar_root · YEAR / τ
+exchange_rate = ln(p / (1 − p)) / rate_scalar + a
 
 p = PT_reserve / (PT_reserve + SY_reserve)`}</code>
         </pre>
@@ -63,13 +64,17 @@ p = PT_reserve / (PT_reserve + SY_reserve)`}</code>
           </li>
           <li>
             <strong>Time to maturity (<code>τ</code>)</strong>: the countdown. As it approaches
-            zero, the curve flattens onto PT = 1 SY no matter what the pool holds.
+            zero, v1&rsquo;s curve flattens onto one PT face unit per SY share. That equals
+            underlying-asset par only while one SY share is worth one underlying unit.
           </li>
         </ul>
         <p>
-          The consequences: PT glides to face value instead of being arbitraged there, liquidity
-          concentrates around the current interest rate where the trading actually happens, and
-          the pool&rsquo;s price can be read directly as a yearly rate. That number is the{" "}
+          The curve concentrates liquidity around the current interest rate where trading happens,
+          and its price can be read as a yearly rate. In deployed v1, however, PT is measured in
+          underlying face units while the curve uses raw SY shares. Pendle converts those shares
+          into asset units first. The missing conversion means v1&rsquo;s rate is share-denominated
+          once the SY exchange rate moves above 1; the factory-built AMM corrects that before
+          longer maturities launch. The displayed number is the{" "}
           <strong>implied APY</strong> you see in the app: the fixed rate the market is currently
           offering.
         </p>
@@ -78,8 +83,9 @@ p = PT_reserve / (PT_reserve + SY_reserve)`}</code>
         <p>
           Stellar&rsquo;s smart-contract runtime rejects floating-point arithmetic outright, so
           the curve is reimplemented in whole-number (fixed-point) math. The build pipeline fails
-          if any floating-point instruction sneaks into a contract, and randomized tests verify
-          that <code>PT + YT = SY</code> survives arbitrary swap sequences.
+          if any floating-point instruction sneaks into a contract. The AMM&rsquo;s randomized
+          custody/reserve suite runs at SY rate 1.0; the factory-built AMM adds the non-par unit
+          tests described above.
         </p>
 
         <h2>How YT trades through a PT pool</h2>
@@ -105,18 +111,18 @@ p = PT_reserve / (PT_reserve + SY_reserve)`}</code>
         <h2>The built-in price average (TWAP)</h2>
         <p>
           Every trade updates a rolling 30-minute average of the implied rate, called a TWAP
-          (time-weighted average price). The point of an average is that it cannot be yanked
-          around by one large trade in one block, which makes it the number outside protocols
-          should read if they ever use PT as collateral. Two guardrails: after a long quiet spell
-          the average resets rather than serving stale data, and for its first 30 minutes it is
-          flagged as <strong>warming up</strong> so nobody prices against a half-formed average.
+          (time-weighted average price). It is useful for display during active trading. It is not,
+          by itself, a collateral-grade oracle: after a long quiet spell, one trade resets the
+          average and the warming-up flag expires 30 minutes later even if no second trade arrives.
+          The grant-built oracle therefore also requires fresh observations, minimum in-window
+          coverage, and a liquidity floor.
         </p>
         <p>
           This exists for a painfully local reason: in February 2026, an attacker manipulated an
           external price feed over a Blend pool on Stellar (the YieldBlox exploit) and drained
           $10.8M. Sidereal&rsquo;s pricing path uses no external feed at all. The interest rate
-          comes straight from Blend on every interaction, and the manipulation-resistant number
-          for integrators is this native TWAP.
+          comes straight from Blend on every interaction. The native TWAP is an oracle input, not
+          a standalone manipulation-resistance guarantee.
         </p>
 
         <h2>What liquidity providers earn</h2>
@@ -124,14 +130,13 @@ p = PT_reserve / (PT_reserve + SY_reserve)`}</code>
         <ul>
           <li>
             <strong>Trading fees</strong>, set per pool at deployment (the live market charges
-            0.1% on PT ↔ SY swaps; YT trades pass through the pool twice and pay accordingly).
+            0.1% on the embedded PT leg of each trade; a YT buy-and-sell round trip pays it twice).
           </li>
           <li>
-            <strong>PT&rsquo;s glide to face value.</strong> The PT sitting in the pool
-            appreciates toward one dollar as maturity nears, by construction. An LP who stays to
-            maturity gets back the full underlying value of what they deposited. The temporary
-            paper losses that plague ordinary AMM pools (called impermanent loss) converge away to
-            zero by maturity here.
+            <strong>Curve convergence.</strong> V1 moves its PT-per-SY-share factor toward one as
+            maturity nears. Because it omits the SY-share-to-asset conversion, this is not a
+            guarantee of zero impermanent loss when an SY share is worth more than one underlying
+            unit. The factory-built AMM normalizes the units before making that claim.
           </li>
         </ul>
         <p>

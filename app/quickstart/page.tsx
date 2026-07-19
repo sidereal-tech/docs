@@ -40,10 +40,11 @@ const STEPS: { title: string; body: React.ReactNode }[] = [
     title: "Take a position",
     body: (
       <>
-        Hold both and you are exactly where you started, since PT + YT = SY. To take a view, use
-        the <strong>Trade</strong> page: sell your YT to keep only PT (a locked, fixed rate), or
-        sell your PT to keep only YT (a bet that rates go up). You can also{" "}
-        <strong>recombine</strong> equal PT and YT back into SY at any time before maturity.
+        Hold matched PT and YT and you retain the combined value of the SY-backed position. To take
+        a view, use the <strong>Trade</strong> page: sell your YT to keep only PT (a locked, fixed
+        rate), or sell your PT to keep only YT (a bet that rates go up). You can also{" "}
+        <strong>recombine</strong> equal PT and YT face amounts into SY shares at the live exchange
+        rate any time before maturity.
       </>
     ),
   },

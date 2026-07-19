@@ -41,15 +41,14 @@ export default function LiquidityGuidePage() {
         <h2>What LPs earn</h2>
         <ul>
           <li>
-            <strong>Trading fees</strong> on every swap in the book, including YT trades, which
-            pass through the pool twice and pay twice.
+            <strong>Trading fees</strong> on every embedded PT leg in the book. A YT buy-and-sell
+            round trip pays the fee twice.
           </li>
           <li>
-            <strong>PT&rsquo;s glide to face value.</strong> The PT half of the pool appreciates
-            toward one dollar as maturity approaches, by construction. An LP who stays to maturity
-            receives the full underlying value of the initial deposit. The temporary paper loss
-            that ordinary AMM pools suffer when prices move (known as impermanent loss) exists
-            here <em>during</em> the term, but it converges to zero by maturity.
+            <strong>Curve convergence.</strong> V1 moves its PT-per-SY-share factor toward one as
+            maturity approaches. Because v1 omits the SY-share-to-asset normalization, this is not
+            a guarantee that impermanent loss reaches zero when an SY share is worth more than one
+            underlying unit. The factory-built AMM corrects that unit boundary.
           </li>
         </ul>
 

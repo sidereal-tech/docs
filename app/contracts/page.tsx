@@ -117,7 +117,7 @@ export default function ContractsPage() {
         </ul>
         <p>
           The full parameter-selection record (why each value is what it is) is public at{" "}
-          <a href="https://github.com/PoulavBhowmick03/sidereal/blob/main/docs/deploy/MAINNET_PARAMETERS.md">
+          <a href="https://github.com/sidereal-tech/docs/blob/main/docs/deploy/MAINNET_PARAMETERS.md">
             docs/deploy/MAINNET_PARAMETERS.md
           </a>
           .
@@ -126,7 +126,7 @@ export default function ContractsPage() {
         <h2>Verifying the deployment</h2>
         <p>
           The contracts are built reproducibly: the manifest at{" "}
-          <a href="https://github.com/PoulavBhowmick03/sidereal/blob/main/deployments/mainnet.toml">
+          <a href="https://github.com/sidereal-tech/contracts/blob/main/deployments/mainnet.toml">
             deployments/mainnet.toml
           </a>{" "}
           records the source commit and the wasm hash of every contract, and anyone can rebuild
@@ -139,7 +139,7 @@ bash scripts/verify-reproducible-build.sh \\
         </pre>
         <p>
           The process and its guarantees are documented in{" "}
-          <a href="https://github.com/PoulavBhowmick03/sidereal/blob/main/docs/deploy/PROVENANCE.md">
+          <a href="https://github.com/sidereal-tech/docs/blob/main/docs/deploy/PROVENANCE.md">
             docs/deploy/PROVENANCE.md
           </a>
           . CI enforces manifest drift checks, so the recorded provenance stays honest against the
@@ -159,7 +159,7 @@ bash scripts/verify-reproducible-build.sh \\
         <h2>Testnet</h2>
         <p>
           A parallel testnet deployment exists for development, generated from the manifest at{" "}
-          <a href="https://github.com/PoulavBhowmick03/sidereal/blob/main/deployments/testnet.toml">
+          <a href="https://github.com/sidereal-tech/contracts/blob/main/deployments/testnet.toml">
             deployments/testnet.toml
           </a>
           . It is not canonical now that mainnet is live.

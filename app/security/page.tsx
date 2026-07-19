@@ -37,7 +37,9 @@ export default function SecurityPage() {
             <strong>Randomized property testing:</strong> a 10,000-step test that hammers the
             contracts with random splits, transfers, claims, recombines and redemptions under
             changing rates, checking after every step that the escrow still covers everything it
-            owes. The pool math is tested the same way against <code>PT + YT = SY</code>.
+            owes. The AMM also has a 10,000-case reserve/custody property suite, but its current
+            fixture runs at SY rate 1.0; non-par plain PT↔SY normalization is the documented M6
+            release gate for the factory-built AMM.
           </li>
           <li>
             <strong>Live simulation:</strong> waves of real testnet wallets ran the full lifecycle
@@ -58,7 +60,7 @@ export default function SecurityPage() {
         </ul>
         <p>
           Known issues, all minor and none affecting funds, are tracked publicly in{" "}
-          <a href="https://github.com/PoulavBhowmick03/sidereal/blob/main/findings.md">
+          <a href="https://github.com/sidereal-tech/contracts/blob/main/findings.md">
             findings.md
           </a>
           .
@@ -154,11 +156,11 @@ export default function SecurityPage() {
         <h2>Reporting a vulnerability</h2>
         <p>
           Report security findings <strong>privately</strong> via GitHub&rsquo;s{" "}
-          <a href="https://github.com/PoulavBhowmick03/sidereal/security">
+          <a href="https://github.com/sidereal-tech/contracts/security">
             Report a vulnerability
           </a>{" "}
           flow, not as a public issue. See{" "}
-          <a href="https://github.com/PoulavBhowmick03/sidereal/blob/main/SECURITY.md">
+          <a href="https://github.com/sidereal-tech/contracts/blob/main/SECURITY.md">
             SECURITY.md
           </a>{" "}
           for the policy.
