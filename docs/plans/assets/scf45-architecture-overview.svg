@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 1180" width="1620" height="1180">
+<defs>
+<marker id="ah" markerWidth="9" markerHeight="9" refX="7.5" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666666"/></marker>
+<marker id="ag" markerWidth="9" markerHeight="9" refX="7.5" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#b8860b"/></marker>
+</defs>
+<rect x="0" y="0" width="1620" height="1180" rx="0" fill="#fafafa" stroke="#fafafa" stroke-width="1"/>
+<text x="60" y="66.4" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="29" fill="#1a1a1a" text-anchor="start">Sidereal — a fixed-income venue on Stellar</text>
+<rect x="60" y="110" width="1500" height="250" rx="10" fill="#f2f2f2" stroke="#999999" stroke-width="1"/>
+<text x="80" y="139.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#666666" text-anchor="start">Users &amp; Services</text>
+<rect x="190" y="180" width="280" height="62" rx="10" fill="#ffffff" stroke="#444444" stroke-width="1"/>
+<text x="330.0" y="217.0" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#1a1a1a" text-anchor="middle">Web App</text>
+<polyline points="330,244 330,288" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="510" y="180" width="280" height="62" rx="10" fill="#ffffff" stroke="#444444" stroke-width="1"/>
+<text x="650.0" y="217.0" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#1a1a1a" text-anchor="middle">TypeScript SDK</text>
+<polyline points="650,244 650,288" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="830" y="180" width="280" height="62" rx="10" fill="#ffffff" stroke="#b8860b" stroke-width="1"/>
+<text x="970.0" y="217.0" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#b8860b" text-anchor="middle">Keeper (grant-built)</text>
+<polyline points="970,244 970,288" fill="none" stroke="#b8860b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ag)"/>
+<rect x="1150" y="180" width="280" height="62" rx="10" fill="#ffffff" stroke="#b8860b" stroke-width="1"/>
+<text x="1290.0" y="217.0" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#b8860b" text-anchor="middle">Indexer + Analytics</text>
+<polyline points="1290,244 1290,288" fill="none" stroke="#b8860b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ag)"/>
+<rect x="190" y="290" width="1240" height="48" rx="10" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+<text x="810.0" y="320.0" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#1a1a1a" text-anchor="middle">Soroban RPC</text>
+<polyline points="490,340 490,516" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<polyline points="1292,340 1292,516" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="60" y="440" width="1500" height="420" rx="10" fill="#f2f2f2" stroke="#999999" stroke-width="1"/>
+<text x="80" y="469.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#666666" text-anchor="start">Sidereal contracts (Soroban)</text>
+<rect x="90" y="520" width="800" height="310" rx="10" fill="transparent" stroke="#999999" stroke-width="1" stroke-dasharray="9 7"/>
+<text x="110" y="545.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#666666" text-anchor="start">Factory-built market series — v1 used the same shape but was hand-deployed</text>
+<rect x="110" y="615" width="155" height="56" rx="10" fill="#ffffff" stroke="#444444" stroke-width="1"/>
+<text x="187.5" y="649.0" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#1a1a1a" text-anchor="middle">SY Vault</text>
+<rect x="385" y="615" width="175" height="56" rx="10" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+<text x="472.5" y="649.0" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#1a1a1a" text-anchor="middle">Tokenizer</text>
+<rect x="660" y="570" width="155" height="48" rx="10" fill="#ffffff" stroke="#444444" stroke-width="1"/>
+<text x="737.5" y="599.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">PT Token</text>
+<rect x="660" y="665" width="155" height="48" rx="10" fill="#ffffff" stroke="#444444" stroke-width="1"/>
+<text x="737.5" y="694.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">YT Token</text>
+<rect x="385" y="745" width="175" height="52" rx="10" fill="#ffffff" stroke="#444444" stroke-width="1"/>
+<text x="472.5" y="776.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Time-decay AMM</text>
+<polyline points="383,643 267,643" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="326.0" y="631.8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#666666" text-anchor="middle">escrow + rate</text>
+<polyline points="562,627 658,597" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<polyline points="562,661 658,687" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="616.0" y="648.8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#666666" text-anchor="middle">gated mint/burn</text>
+<polyline points="472,743 472,673" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="484" y="711.8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#666666" text-anchor="start">flash split/recombine</text>
+<polyline points="383,763 245,673" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="310" y="695.8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#666666" text-anchor="start">rate</text>
+<rect x="1040" y="520" width="505" height="310" rx="10" fill="transparent" stroke="#b8860b" stroke-width="1" stroke-dasharray="9 7"/>
+<text x="1060" y="545.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#b8860b" text-anchor="start">Venue layer (new)</text>
+<rect x="1065" y="590" width="215" height="54" rx="10" fill="#ffffff" stroke="#b8860b" stroke-width="1"/>
+<text x="1172.5" y="622.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#b8860b" text-anchor="middle">Market Factory</text>
+<rect x="1305" y="590" width="215" height="54" rx="10" fill="#ffffff" stroke="#b8860b" stroke-width="1"/>
+<text x="1412.5" y="622.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#b8860b" text-anchor="middle">Registry</text>
+<rect x="1065" y="690" width="215" height="54" rx="10" fill="#ffffff" stroke="#b8860b" stroke-width="1"/>
+<text x="1172.5" y="722.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#b8860b" text-anchor="middle">Router</text>
+<rect x="1305" y="690" width="215" height="54" rx="10" fill="#ffffff" stroke="#b8860b" stroke-width="1"/>
+<text x="1412.5" y="722.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#b8860b" text-anchor="middle">SEP-40 PT Oracle</text>
+<polyline points="1063,617 894,617" fill="none" stroke="#b8860b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ag)"/>
+<text x="978.0" y="605.8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#b8860b" text-anchor="middle">deploys series</text>
+<polyline points="1063,717 894,717" fill="none" stroke="#b8860b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ag)"/>
+<text x="978.5" y="705.8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#b8860b" text-anchor="middle">zap / rollover</text>
+<polyline points="1282,617 1303,617" fill="none" stroke="#b8860b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ag)"/>
+<text x="1292.0" y="577.8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#b8860b" text-anchor="middle">registers</text>
+<polyline points="894,790 1010,815 1303,742" fill="none" stroke="#b8860b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ag)"/>
+<text x="1100" y="812" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#b8860b" text-anchor="middle">TWAP + SY rate + maturity</text>
+<rect x="60" y="900" width="1500" height="220" rx="10" fill="#f2f2f2" stroke="#999999" stroke-width="1"/>
+<text x="80" y="929.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#666666" text-anchor="start">Yield sources &amp; consumers</text>
+<rect x="130" y="985" width="245" height="62" rx="10" fill="#ffffff" stroke="#444444" stroke-width="1"/>
+<text x="252.5" y="1021.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Blend v2 USDC pool</text>
+<rect x="425" y="985" width="245" height="62" rx="10" fill="#ffffff" stroke="#444444" stroke-width="1"/>
+<text x="547.5" y="1021.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">DeFindex vault</text>
+<rect x="720" y="985" width="245" height="62" rx="10" fill="#ffffff" stroke="#444444" stroke-width="1"/>
+<text x="842.5" y="1021.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Circle USDC SAC</text>
+<rect x="1290" y="985" width="245" height="62" rx="10" fill="#ffffff" stroke="#b8860b" stroke-width="1"/>
+<text x="1412.5" y="1021.7" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#b8860b" text-anchor="middle">Lending markets</text>
+<polyline points="360,983 140,673" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<polyline points="547,983 175,673" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="200" y="971.8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#666666" text-anchor="start">supply / share price</text>
+<polyline points="842,983 450,878 210,673" fill="none" stroke="#666666" stroke-width="1.6" stroke-linejoin="round" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<text x="560" y="961.8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#666666" text-anchor="start">deposit / redeem</text>
+<polyline points="1412,746 1412,983" fill="none" stroke="#b8860b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ag)" stroke-dasharray="8 6"/>
+<text x="1405" y="879.8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#b8860b" text-anchor="end">PT as collateral</text>
+</svg>
